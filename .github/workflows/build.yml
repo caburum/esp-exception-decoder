@@ -43,4 +43,4 @@ jobs:
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          files: vsix-viewer-${{steps.package-version.outputs.current-version}}.vsix
+          files: ${{ github.workspace }}/vsix-viewer-${{steps.package-version.outputs.current-version}}.vsix
