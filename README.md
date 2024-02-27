@@ -1,6 +1,10 @@
 # ESP Exception Decoder
 
-[![Tests](https://github.com/dankeboy36/esp-exception-decoder/actions/workflows/build.yml/badge.svg)](https://github.com/dankeboy36/esp-exception-decoder/actions/workflows/build.yml)
+This fork contains basic support for VS Code, intended to work with the [Visual Studio Code extension for Arduino](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.vscode-arduino).
+
+---
+
+<!-- [![Tests](https://github.com/dankeboy36/esp-exception-decoder/actions/workflows/build.yml/badge.svg)](https://github.com/dankeboy36/esp-exception-decoder/actions/workflows/build.yml) -->
 
 > ⚠️ This project is in an early state.
 
@@ -8,9 +12,9 @@
 
 ![ESP8266/ESP32 Exception Decoder Extension](./images/espExceptionDecoder_main.png)
 
-> ⚠️ This extension has nothing to do with the [Visual Studio Code extension for Arduino](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.vscode-arduino). This extension does not work in VS Code.
+<!-- > ⚠️ This extension has nothing to do with the [Visual Studio Code extension for Arduino](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.vscode-arduino). This extension does not work in VS Code. -->
 
-## Installation
+<!-- ## Installation
 
 - Download the latest extension from the GitHub [release page](https://github.com/dankeboy36/esp-exception-decoder/releases/latest). The asset filename is `esp-exception-decoder-${VERSION}.vsix`, where `${VERSION}` is the latest version.
 - When the Arduino IDE is not running, copy the downloaded extension into the folder named `plugins` folder under Arduino IDE's configuration folder. If the `plugins` folder does not exist, create it.
@@ -45,7 +49,7 @@
 
     > ⚠️ Arduino IDE has to support the path links that contain spaces in the decoder terminal. ([eclipse-theia/theia#12643](https://github.com/eclipse-theia/theia/issues/12643))
 
-    > ⚠️ [`terminal.integrated.rightClickBehavior`](https://code.visualstudio.com/docs/terminal/basics#_rightclick-behavior) is unsupported in Arduino IDE. ([eclipse-theia/theia#12644](https://github.com/eclipse-theia/theia/issues/12644))
+    > ⚠️ [`terminal.integrated.rightClickBehavior`](https://code.visualstudio.com/docs/terminal/basics#_rightclick-behavior) is unsupported in Arduino IDE. ([eclipse-theia/theia#12644](https://github.com/eclipse-theia/theia/issues/12644)) -->
 
 ## Development
 
@@ -83,3 +87,6 @@
 
 - [@per1234](https://github.com/per1234) for his tireless contribution to open source.
 - [@me-no-dev](https://github.com/me-no-dev) for the [original implementation](https://github.com/me-no-dev/EspExceptionDecoder).
+
+- https://github.com/dankeboy36/esp-exception-decoder
+- https://github.com/nosknut/arduino-sketch-auto-switcher

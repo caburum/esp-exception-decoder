@@ -1,21 +1,21 @@
 {
   "name": "esp-exception-decoder",
   "displayName": "ESP Exception Decoder",
-  "description": "ESP8266/ESP32 Exception Decoder Extension for the Arduino IDE",
-  "version": "1.0.2",
+  "description": "ESP8266/ESP32 Exception Decoder Extension for VS Code",
+  "version": "2.0.0",
   "private": true,
   "engines": {
     "vscode": "^1.78.0"
   },
   "author": "dankeboy36",
-  "publisher": "dankeboy36",
+  "publisher": "caburum",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dankeboy36/esp-exception-decoder/issues"
+    "url": "https://github.com/caburum/esp-exception-decoder/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dankeboy36/esp-exception-decoder.git"
+    "url": "https://github.com/caburum/esp-exception-decoder.git"
   },
   "categories": [
     "Other"

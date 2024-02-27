@@ -17,7 +17,7 @@ import { Debug } from './utils';
 const terminalDebug: Debug = debug('espExceptionDecoder:terminal');
 
 let _debugOutput: vscode.OutputChannel | undefined;
-function debugOutput(): vscode.OutputChannel {
+export function debugOutput(): vscode.OutputChannel {
   if (!_debugOutput) {
     _debugOutput = vscode.window.createOutputChannel(
       `${decodeTerminalTitle} (Log)`
@@ -25,26 +25,11 @@ function debugOutput(): vscode.OutputChannel {
   }
   return _debugOutput;
 }
-function createDebugOutput(): Debug {
+export function createDebugOutput(): Debug {
   return (message) => debugOutput().appendLine(message);
 }
 
-export function activateDecoderTerminal(
-  context: vscode.ExtensionContext,
-  arduinoContext: ArduinoContext
-): void {
-  context.subscriptions.push(
-    new vscode.Disposable(() => _debugOutput?.dispose()),
-    vscode.commands.registerCommand('espExceptionDecoder.showTerminal', () =>
-      opeTerminal(arduinoContext, decode, {
-        show: true,
-        debug: createDebugOutput(),
-      })
-    )
-  );
-}
-
-function opeTerminal(
+export function opeTerminal(
   arduinoContext: ArduinoContext,
   decoder: typeof decode = decode,
   options: { show: boolean; debug: Debug } = {
